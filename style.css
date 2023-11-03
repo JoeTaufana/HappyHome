@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration:none;
+}
+
+/******************fonts*************************************/
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Light.eot');
+    src: url('../fonts/Quicksand-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Quicksand-Light.woff2') format('woff2'),
+        url('../fonts/Quicksand-Light.woff') format('woff'),
+        url('../fonts/Quicksand-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Light_1.eot');
+    src: url('../fonts/Quicksand-Light_1.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Quicksand-Light_1.woff2') format('woff2'),
+        url('../fonts/Quicksand-Light_1.woff') format('woff'),
+        url('../fonts/Quicksand-Light_1.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Light_2.eot');
+    src: url('../fonts/Quicksand-Light_2.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Quicksand-Light_2.woff2') format('woff2'),
+        url('../fonts/Quicksand-Light_2.woff') format('woff'),
+        url('../fonts/Quicksand-Light_2.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Light_3.eot');
+    src: url('../fonts/Quicksand-Light_3.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Quicksand-Light_3.woff2') format('woff2'),
+        url('../fonts/Quicksand-Light_3.woff') format('woff'),
+        url('../fonts/Quicksand-Light_3.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular.eot');
+    src: url('../fonts/Oswald-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Oswald-Regular.woff2') format('woff2'),
+        url('../fonts/Oswald-Regular.woff') format('woff'),
+        url('../fonts/Oswald-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular_1.eot');
+    src: url('../fonts/Oswald-Regular_1.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Oswald-Regular_1.woff2') format('woff2'),
+        url('../fonts/Oswald-Regular_1.woff') format('woff'),
+        url('../fonts/Oswald-Regular_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular_2.eot');
+    src: url('../fonts/Oswald-Regular_2.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Oswald-Regular_2.woff2') format('woff2'),
+        url('../fonts/Oswald-Regular_2.woff') format('woff'),
+        url('../fonts/Oswald-Regular_2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular_3.eot');
+    src: url('../fonts/Oswald-Regular_3.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Oswald-Regular_3.woff2') format('woff2'),
+        url('../fonts/Oswald-Regular_3.woff') format('woff'),
+        url('../fonts/Oswald-Regular_3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+h1{
+    font-family: 'Oswald';
+    font-size: 66px;
+    font-weight: bold;
+}
+h2{
+    font-family: 'Oswald';
+    font-size: 20px;
+    font-weight: bold;
+}
+h3{
+    font-family: 'Oswald';
+    font-size: 16px;
+    font-weight: bold;
+}
+p{
+    font-family: 'Quicksand';
+    font-size: 16px;
+    font-weight: bold;
+}
+/**************************body**************************/
+
+body{
+    background: #F2F2F2;
+    
+}
+/**********************header **************************/
+header{
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+
+#logo{
+    height: 55px;
+    margin-top: 5px;
+}
+
+#logo>img{
+    height: 100%;
+}
+ 
+header>nav{
+    height: 65px;
+    width: 40%;
+    margin-right: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;   
+}
+
+header>nav>ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;   
+}
+
+header>nav>ul li{
+margin: 0 5px;
+
+
+}
+header>nav ul li a{
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: capitalize;  
+    border-radius: 15px 15px 0 0;
+
+}
+.fd-bleu{
+    background-color: #385a64;
+    color: #F2B705;
+}
+.fd-jaune{
+    background-color: #F2B705;
+    color: #385a64;
+}
+header>nav ul li a:hover{
+    opacity: 20%; 
+}
+#photo_profil{
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    border: #f2a29b solid 5px;
+}
+
+#photo_profil img{
+    width: 100%;
+}
+/* fin header******/
+
+/**********MAIN *************/
+/********home et lancé de dé************/
+
+#home{
+    padding: 0 10%;
+    color: #385A64;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    background: url(../img/Splash.svg) bottom right, 
+                url(../img/Ellipse_gras_ocre.svg) 100% 25%,
+                url(../img/Ellipse_gras_jaune.svg) 0 35%;
+    background-repeat: no-repeat;
+}
+#home>div{
+    flex: 1 300px;/* chaque div utilise 1 part égale du parent 
+    et elle passe à la ligne à 300px (ne pas oublier flex-wrap
+    sur le parent*/
+}
+#clou_jaune{
+    margin: 0 20px;
+}
+
+#home>div>div{
+    display: flex;
+    width: 70%;
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+
+#paragraphe_home h2{
+    margin-bottom: 10px;
+}
+.gauche{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gauche div img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50%;
+    padding-bottom: 5px;
+}
+.gauche>nav>img:hover{
+    transform: rotate(720seg);
+    cursor: pointer;
+
+}
+.gauche h1{
+    transform: rotate(-15deg);
+    text-align: center;
+    margin: 100px 0px;
+}
+.gauche a{
+    margin: 8%;
+}
+.gauche h2{
+    margin-bottom: 50px; 
+}
+.droite{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.droite>div img{
+    width: 100%;
+    mix-blend-mode: darken;
+}
+/*********Fin home et lancement de dés***********/
+/**** Découverte activite *****/
+
+#decouverte{
+    padding: 100px 10%;
+    text-align: center;
+    background: url(../img/Splash.svg) 10% 0,
+                url(../img/Déco\ jaune.svg) 100% 20%,
+                url(../img/Déco\ rose.svg) 20% 80%;
+    background-repeat: no-repeat;
+}
+#decouverte h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: #385A64;
+}
+#decouverte>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 70px 0;
+}
+
+
+#decouverte>div a div{
+    width: 250px;
+    height: 250px;
+    margin: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+#decouverte>div a div img{
+    width: 100%;
+}
+
+.border_jaune{
+    border: 8px solid #F2B705;
+}
+
+.border_vert{
+    border: 8px solid #385A64;
+}
+
+.border_ocre{
+    border: 8px solid #BF5F56;
+}
+
+.btn{
+    text-transform: uppercase;
+    border-radius: 12px;
+    padding: 10px 20px;
+    color: #385A64;
+}
+.jaune{
+    background-color: #F2B705;
+}
+
+/*********Fin Découvertes Activités***********/
+#concept{
+    padding: 100px 10%;
+    color: #385A64;
+    background: white;
+    margin-bottom: 100px;
+}
+#concept>div{
+    display: flex;
+}
+#concept>div h1{
+    flex: 1;
+    
+}
+#concept>div>div{
+    flex: 1;
+}
+
+#paragraph_concept{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+#paragraph_concept>img{
+    margin: 0 20px;
+}
+
+
+
+/***************************************************
+                      footer
+***************************************************/
+
+footer{
+    padding: 50px 0;
+    background: #BF5F56;
+    display: flex;
+    justify-content: space-around;
+}
+
+#logo_white{
+    width: 125px;
+    height: 100px;
+}
+
+#logo_white>img{
+    width: 100%;
+}
+#liens{
+    display: flex;
+}
+
+#liens ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#liens ul li a{
+    color: #F2F2F2;
+    font-weight: bold;
+}
+#liens div{
+    margin: 0 20px;
+}
+#reseaux{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#reseaux a{
+    margin:0 15px;
+}
