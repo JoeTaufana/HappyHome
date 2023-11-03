@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="connexion.css">
+</head>
+<body>
+    <main class="popup">
+        <h2>Se connecter</h2>
+        <form>
+                <label for="mail">Email :</br><input type="email" id="mail" name="mail" placeholder="Entrez votre mail" value=""></label></br>
+                <label for="mdp">Mot de passe :</br><input type="password" id="mdp" name="mdp" minlength="12" maxlength="20" placeholder="Entrez votre mot de passe" value=""></label></br> <!--Ajout sécurité-->
+                <a id="oubli" href="oublimdp">Mot de passe oublié</a></br>
+                <label class="checkbox"><input class="checkbox" type="checkbox" value="true">Se souvenir de moi</label>
+            <div class="centre">
+                <input id="Bouton" type="submit" value="Se connecter"></br>
+                <p>Je n'ai pas encore de compte, <a id="créer" href="../Création compte/creer_compte.html">créer un compte!</a></p>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

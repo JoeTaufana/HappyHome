@@ -1,0 +1,52 @@
+.popup{
+    width: 300px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    border: 2px solid #BF5F56;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 10px 10px 13px 0px;
+    color: #385A64;
+}
+.popup h2{
+    text-align: left;
+    font-family: Oswald;
+}
+.popup p{
+    font-family: Quicksand; 
+}
+input, a{
+    margin: 5px;
+    background-color: #f2f2f2;
+}
+
+.centre{
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 0 20px;
+}
+#nom,#prenom,#mail,#mdp,#mdp2,#confmdp{
+    border: 1px solid #BF5F56;
+    border-radius: 10px;
+    width: 290px;
+}
+#anniversaire{
+    border: 1px solid #BF5F56;
+    border-radius: 10px;
+    width: 150px;
+}
+#oubli{
+    margin: 15px 5px;
+}
+
+.checkbox{
+    margin-top: 15px;
+}
+#Bouton{
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #F2F2F2;
+    background-color: #BF5F56;
+    padding: 10px;
+}
