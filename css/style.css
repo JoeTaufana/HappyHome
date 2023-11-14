@@ -267,10 +267,10 @@ header>nav ul li a:hover{
 #decouverte{
     padding: 100px 10%;
     text-align: center;
-    background: url(../img/Splash.svg) 10% 0,
+    background: url(../img/Splash.svg) 10% 0, /***** sert à mettre l'image en arrière plan****/
                 url(../img/Déco\ jaune.svg) 100% 20%,
                 url(../img/Déco\ rose.svg) 20% 80%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; /*** éviter que les image en arrière plan ne se répètent***********/
 }
 #decouverte h1{
     text-align: center;
@@ -454,3 +454,215 @@ footer{
 
 }
 /****** fin 300px*************/
+
+/**************************Agenda**************************************/
+#body_agenda{
+    display: flex;
+     margin-top: 5%;
+    background: url(../img/Splash.svg) 28% 90%;
+    background-repeat: no-repeat;
+}  
+
+/* ********** partie gauche de la page agenda */
+#sidebar_calendrier{
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    min-height: 90vh;
+    background: url(../img/Ellipse_gras_verte.svg) -40% 55%,
+                url(../img/famille_voiture.svg) 50% 75%,
+                url(../img/Splash.svg) -25% 0%;
+    background-repeat: no-repeat;
+    mix-blend-mode: darken; /************ pour enlever le fond de l'image***/
+}
+
+.wrapper {
+    width: 300px;
+    height: 400px;
+    background: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    border: #385A64 1px solid;
+    
+}
+
+
+.wrapper header {
+    display: flex;
+    align-items: center;
+    padding: 5% 10% 1%;
+    justify-content: space-between;
+    color: #385A64;
+}
+
+header .icons {
+    display: flex;
+}
+
+header .icons span {
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.9rem;
+    user-select: none;
+    border-radius: 50%;
+}
+
+.icons span:last-child {
+    margin-right: -10px;
+}
+
+header .icons span:hover {
+    background: #f2f2f2;
+}
+
+header .current-date {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.calendar {
+    padding: 20px;
+}
+
+.calendar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+}
+
+.calendar .days {
+    margin-bottom: 5px;
+}
+
+.calendar li {
+    color: #385a64;
+    width: calc(100% / 7);
+    font-size: 15px;
+}
+
+.calendar .weeks li {
+    font-weight: 500;
+    cursor: default;
+}
+
+.calendar .days li {
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+}
+
+.days li.inactive {
+    color: #aaa;
+}
+
+.days li.active {
+    color: #f2f2f2;
+    font-weight: bold;
+}
+
+.days li::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.days li.active::before {
+    background: #385A64;
+}
+
+.days li:not(.active):hover::before {
+    background: #f2f2f2;
+}
+
+/* @media screen and (max-width:1400px){
+    #sidebar_calendrier{
+        display: none;
+    }
+} */
+/* ***************** Main de la page agenda */
+  #bloc_planning{
+    width: 70%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../img/Ellipse_gras_jaune.svg) 120% 70%;
+    background-repeat: no-repeat;
+  }
+#header_planning{
+    width: 80%;
+    margin: 0 100%;
+    color:#385A64; 
+    font-family: 'Quicksand';
+    font-size: 200%;
+    text-transform: capitalize;
+}
+
+#planning{
+    width: 100%;
+}
+
+#top_planning{
+    width: 80%;
+    margin: auto;
+    padding: 2% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: end; 
+}
+
+.btn_ocre{
+    text-transform: uppercase;
+    border-radius: 12px;
+    padding: 10px 20px;
+    color: #F2F2F2;
+    background-color: #BF5F56;
+}
+
+.lien_planning{
+    color: #BF5F56;
+    font-weight: bold;
+    margin: 0 2%;
+}
+
+#planning_journée{
+    width: 80%;
+    height: 600px;
+    margin: auto;
+    overflow: scroll;
+    
+    /* border: #385A64 2px solid; */ 
+}
+
+#planning_journée li{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    color: #385A64;
+}
+
+.heure_planning{
+    width: 15%;
+    text-align: center;
+}
+
+.activites_planning{
+    width: 100%;
+    border: #385A6480 0.1px solid;
+    border-radius: 15px;
+    margin: 0 2%;
+}
+

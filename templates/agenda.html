@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <div id="logo">
+                    <img  src="../logo/LOGO.svg" alt="logo">
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li ><a class="fd-bleu" href="agenda.html"><h2>agenda</h2></a></li>
+                <li ><a class="fd-jaune" href=""><h2>activites</h2></a></li>
+                <li ><div id="photo_profil"><img src="../img/la-personne.png" alt=""></div></li>
+            </ul>
+        </nav>
+    </header>
+<!--*******************************main*********************************-->    
+    <main id="body_agenda">
+        <aside id="sidebar_calendrier">
+            <div class="wrapper">
+                <header>
+                    <p class="current-date"></p>
+                    <div class="icons">
+                        <span id="prev" class="material-symbols-rounded"><</span>
+                        <span id="next" class="material-symbols-rounded">></span>
+                    </div>
+                </header>
+                <div class="calendar">
+                    <ul class="weeks">
+                        <li>Dim</li>
+                        <li>Lun</li>
+                        <li>Mar</li>
+                        <li>Mer</li>
+                        <li>Jeu</li>
+                        <li>Ven</li>
+                        <li>Sam</li>
+                    </ul>
+                    <ul class="days"></ul>
+                </div>
+            </div>
+            <!-- <div>
+                <img src="../img/famille_voiture.jpg" alt="famille jouant aux voiture dans le salon">
+            </div> -->
+        </aside>
+        <section id="bloc_planning">
+            <h2 id="header_planning">
+                vendredi 03 novembre 2023
+            </h2>
+            <div id="planning">
+                <div id="top_planning">
+                    <a class="btn_ocre" href="#">ajouter une activité</a>
+                    <a class="lien_planning" href="#">voir la semaine</a>
+                </div>
+                <div>
+                    <ul id="planning_journée">
+                        <li >
+                            <p class="heure_planning">00 : 00</p>
+                            <p class="activites_planning"></p>
+                        </li>
+                        <li>
+                            <p class="heure_planning">01 : 00</p>
+                            <p class="activites_planning"></p>
+                        </li>
+                        <li>
+                            <p class="heure_planning">02 : 00</p>
+                            <p class="activites_planning"></p>
+                        </li>
+                        <li>
+                            <p class="heure_planning">03 : 00</p>
+                            <p class="activites_planning"></p>
+                        </li>
+                        <li>
+                            <p class="heure_planning">04 : 00</p>
+                            <p class="activites_planning"></p>
+                        </li>
+                        <li>
+                            <p class="heure_planning">05 : 00</p>
+                            <p class="activites_planning"></p>
+                        </li>
+                        <li>
+                            <p class="heure_planning">06 : 00</p>
+                            <p class="activites_planning"></p>
+                        </li>
+                        <li>
+                            <p class="heure_planning">07 : 00</p>
+                            <p class="activites_planning"></p>
+                        </li>
+                        <li>
+                            <p class="heure_planning">08 : 00</p>
+                            <p class="activites_planning"></p>
+                        </li>
+                        <li>
+                            <p class="heure_planning">09 : 00</p>
+                            <p class="activites_planning"></p>
+                        </li>
+                        <li>
+                            <p class="heure_planning">10 : 00</p>
+                            <p class="activites_planning"></p>
+                        </li>
+                        <li>
+                            <p class="heure_planning">11 : 00</p>
+                            <p class="activites_planning"></p>
+                        </li>
+                        <li> 
+                            <p class="heure_planning">12 : 00</p>
+                            <p class="activites_planning"></p>
+                        </li>
+                        <li>
+                            <p class="heure_planning">13 : 00</p>
+                            <p class="activites_planning"></p>
+                        </li>
+                        <li>
+                            <p class="heure_planning">14 : 00</p>
+                            <p class="activites_planning"></p>
+                        </li>
+                        <li>
+                            <p class="heure_planning">15 : 00</p>
+                            <p class="activites_planning"></p>
+                        </li>
+                        <li>
+                            <p class="heure_planning">16 : 00</p>
+                            <p class="activites_planning"></p>
+                        </li>
+                        <li>
+                            <p class="heure_planning">17 : 00</p>
+                            <p class="activites_planning"></p>
+                        </li>
+                        <li>
+                            <p class="heure_planning">18 : 00</p>
+                            <p class="activites_planning"></p>
+                        </li>
+                        <li>
+                            <p class="heure_planning">19 : 00</p>
+                            <p class="activites_planning"></p>
+                        </li>
+                        <li>
+                            <p class="heure_planning">20 : 00</p>
+                            <p class="activites_planning"></p>
+                        </li>
+                        <li>
+                            <p class="heure_planning">21 : 00</p>
+                            <p class="activites_planning"></p>
+                        </li>
+                        <li>
+                            <p class="heure_planning">22 : 00</p>
+                            <p class="activites_planning"></p>
+                        </li>
+                        <li>
+                            <p class="heure_planning">23 : 00</p>
+                            <p class="activites_planning"></p>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+<!--*******************************footer***********************-->        
+        <footer>            
+            <div id="logo_white">
+                <img src="../logo/LOGO_white.svg" alt=" logo blanc">            
+            </div>
+            <div id="liens">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Aide</a></li>
+                    <li><a href="#">A propos</a></li>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                </ul>
+                <div>
+                    <img src="../img/clou.svg" alt="">
+                </div>
+                <ul >
+                    <li><a href="#">Confidentialité</a></li>
+                    <li><a href="#">Contactez-nous</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Partenariat</a></li>
+                </ul>                    
+            </div>            
+            <div id="reseaux">
+                <div><a href="#"><img src="../icones/instagram.svg" alt="Nous suivre sur instagram"></a></div>
+                <div><a href="#"><img src="../icones/facebook.svg" alt="Nous suivre sur facebook"></a></div>
+                <div><a href="#"><img src="../icones/pinterest.svg" alt="Nous suivre sur pinterest"></a></div>
+            </div>
+        </div>  
+        <script src="../js/calendrier.js"></script>  
+    </footer>
